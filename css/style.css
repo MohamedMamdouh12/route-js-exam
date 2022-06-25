@@ -1,0 +1,191 @@
+:root {
+    --main-color: rgb(242, 84, 84) !important;
+    font-family: 'segoe ui light';
+}
+
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+#navbar {
+    height: 100vh;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    display: flex;
+   
+}
+.nav-shown img{
+    
+    height: 48px;
+    padding-left: 10px;
+}
+.nav-shown{
+    width: 60px;
+}
+.nav-shown a{
+    text-decoration: none;
+    color: black !important;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+
+/* start hidden nav */
+
+.nav-hidden{
+    width: 0px;
+	height: 100vh;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+
+.nav-hidden a{
+    text-decoration: none;
+    color: white !important;
+    font-size: 18px;
+    padding:15px 40px 10px 40px;
+    /* background-color: orange; */
+}
+
+
+
+
+.nav-hidden a:hover {
+    color: var(--main-color) !important;
+}
+
+
+
+
+.nav-links li{
+    list-style: none;
+    font-weight: 500;
+    margin-top: 500px;
+}
+
+
+.nav-footer{
+   
+	bottom: 40px;
+	left: 25px;
+    background: #000;
+}
+.nav-footer a 
+{
+	padding-left: 15px;
+	font-size:14px;
+}
+
+
+
+/* end hidden nav */
+
+
+
+/* end of navbar section */
+
+.movies-image{
+    position: relative;
+    overflow: hidden;
+    border-radius: 2%;    
+}
+
+.movies-image img{
+    height: 450px;
+}
+
+.image-layer{
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    transition: top 1s;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+    
+}
+
+.movies-image:hover .image-layer{
+    top:0%;
+}  
+
+
+/* all inputs */
+.form-control
+{
+	background-color: transparent;
+	border: none;
+	border-radius: 5%;
+	color: white;
+	font-weight: 400;
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+
+}
+.form-control:focus
+{
+	background-color: transparent;
+	border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.7); 
+    border-radius: 5%;
+} 
+
+#contact .mess{
+    background-color: #f8d7da;
+    color: #721c24;
+    padding:13px 13px;
+    display: none;
+}
+
+
+
+/* end of css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

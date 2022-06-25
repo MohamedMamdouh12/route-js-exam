@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Js</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body >
+
+
+    <header id="navbar">
+
+
+        <div class="nav-hidden bg-black text-white position-relative">
+
+
+
+            <div class=" nav-links ">
+
+
+                <ul class="py-4 ">
+                    
+                    <li><a class="linksMovies" href="#now_playing">Now Playing</a></li>
+                    <li><a class="linksMovies" href="#popular">Popular</a></li>
+                    <li><a class="linksMovies" href="#top_rated">Top Rated</a></li>
+                    <li><a class="linksMovies" href="#trending">Trending</a></li>
+                    <li><a class="linksMovies" href="#upcoming">Upcoming</a></li>
+                    <li><a class="contactLi"  href="#contact">contact Us</a></li>
+
+                </ul>
+
+
+
+            </div>
+
+            <div class="nav-footer position-absolute text-start">
+
+                <a href=" #"><i class="fab fa-facebook-f "></i></a>
+                <a href="#"><i class="fab fa-twitter "></i></a>
+                <a href="#"><i class="fas fa-globe "></i></a>
+                <div class="text-muted mt-2">
+                    <span>Copyright © 2019 All Rights Reserved.</span>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="nav-shown bg-light text-center d-flex row ">
+
+
+            <figure class="py-4 align-self-start">
+                <img src="images/logo.png" alt="">
+            </figure>
+
+
+
+            <div class="toggleBtn align-self-center  p-4">
+
+                <a class="openBtn d-flex">
+                    <i class="fa fa-align-justify  fs-3"></i>
+                </a>
+                <a class="closeBtn d-none">
+                    <i class="fa-solid fa-xmark  fs-3"></i>
+                </a>
+
+            </div>
+
+            <div class="social-icon align-self-end py-4 ">
+
+                <a href=" #"><i class="fas fa-globe d-block my-1"></i></a>
+                <a href=" #"><i class="fas fa-share-alt d-block my-3 "></i></a>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </header>
+
+
+
+    <!--  end of head section  -->
+
+
+    <section class="main py-5  my-5">
+        <div class="container w-75 mx-auto">
+            <div class="row">
+                <div class="col-md-6"><input class="form-control " id="searchByWord"
+                        placeholder="get movies by word......"></div>
+                <div class="col-md-6"><input class="form-control " onkeyup="search(this.value)"
+                        placeholder="search......">
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container py-4 mt-5 ">
+            <div class="row g-4" id="rowData">
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+    <section id="contact">
+
+        <div class="container w-75 mx-auto my-4">
+            <h2 class="text-light my-4">ContacUs...</h2>
+            <div class="row mt-4">
+
+                <div class="col-md-6 mb-3"><input type="text" class="form-control nameInput"
+                        placeholder="Enter Your Name." required>
+                    <div class="nameMessage mess" >
+                        Your Name is not valid
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 mb-3"><input type="email" class="form-control emailInput" placeholder="Enter Email"
+                        required>
+                    <div class="emailMessage mess"">
+                        enter valid Email 
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6 mb-3"><input type="tel" class="form-control  phoneInput" placeholder="Enter Phone"
+                        required>
+                        <div class="phoneMessage mess">
+                            enter valid Phone
+
+                        </div>
+                </div>
+
+
+
+
+                <div class="col-md-6 mb-3"><input type="number" class="form-control ageInput " placeholder="Enter Age"
+                        required>
+                        <div class="ageMessage mess">
+                            enter valid Age from 9 to 79
+
+                        </div>
+                </div>
+
+
+                
+                <div class="col-md-6 mb-3"><input type="password" class="form-control passInput"
+                        placeholder="Enter Password" required>
+                        <div class="passMessage mess">
+                            enter valid password *minimum of 6 characters, at least 1 uppercase letter, 1 lowercase letter, and 1 number with no spaces*
+                            
+                        </div>
+                </div>
+                
+
+
+
+
+                <div class="col-md-6 mb-3"><input type="password" class="form-control repassInput"
+                    placeholder="Enter RePassword" required >
+                    <div class="repassMessage mess">
+                        enter valid Repassword
+                        
+                    </div>
+                    
+            </div>
+
+
+
+
+                <button class="btn  w-25 btn-outline-danger my-5" type="submit">submit</button>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
