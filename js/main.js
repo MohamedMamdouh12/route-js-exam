@@ -11,11 +11,11 @@ $(".contactLi").click(function (e) {
 
 
 $('.linksMovies').click(function (e) {
-let moviesHref=$(e.target).attr('href');
-// console.log(moviesHref)
-   getMovies(moviesHref.replace('#',''));
-   let sectionOffset = $(this).offset().top;
-   $("html , body").animate({ scrollTop: sectionOffset }, 1000);
+let moviesText=$(e.target).text();
+// console.log(moviesText)
+   getMovies(moviesText);
+   let mainOffset = $(moviesText).offset().top;
+   $("html , body").animate({ scrollTop: mainOffset }, 1000);
 
 });
 
